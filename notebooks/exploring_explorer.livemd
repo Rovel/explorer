@@ -224,7 +224,7 @@ Remember those helpful errors? We've tried to add those throughout. So if you tr
 
 ```elixir
 s = Series.from_list([1, 2, 3])
-s1 = Series.from_list([1.0, 2.0, 3.0])
+s1 = Series.from_list(["a", "b", "c"])
 Series.add(s, s1)
 ```
 
@@ -232,7 +232,7 @@ Just kidding! Integers and floats will downcast to floats. Let's try again:
 
 ```elixir
 s = Series.from_list([1, 2, 3])
-s1 = Series.from_list(["a", "b", "c"])
+s1 = Series.from_list([1.0, 2.0, 3.0])
 Series.add(s, s1)
 ```
 
